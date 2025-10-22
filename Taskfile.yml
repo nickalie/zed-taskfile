@@ -1,0 +1,40 @@
+version: '3'
+
+vars:
+  GREETING: Hello World
+  APP_NAME: myapp
+
+env:
+  GO111MODULE: on
+
+tasks:
+  hello:
+    desc: Say hello
+    cmds:
+      - echo "{{.GREETING}}"
+
+  build:
+    desc: Build the project
+    cmds:
+      - go build -o {{.APP_NAME}} main.go
+    sources:
+      - '*.go'
+    generates:
+      - '{{.APP_NAME}}'
+
+  test:
+    desc: Run tests
+    deps:
+      - build
+    cmds:
+      - go test ./...
+
+  clean:
+    desc: Clean build artifacts
+    cmds:
+      - rm -f {{.APP_NAME}}
+
+  default:
+    desc: Run default task
+    deps:
+      - test

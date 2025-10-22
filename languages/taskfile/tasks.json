@@ -1,0 +1,14 @@
+[
+  {
+    "label": "task: run task",
+    "command": "task --taskfile $ZED_FILENAME $ZED_SYMBOL",
+    "cwd": "$ZED_DIRNAME",
+    "tags": ["taskfile-task"]
+  },
+  {
+    "label": "task: list tasks",
+    "command": "task --taskfile $ZED_FILENAME --list-all",
+    "cwd": "$ZED_DIRNAME",
+    "tags": ["taskfile-list"]
+  }
+]

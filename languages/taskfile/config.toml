@@ -1,0 +1,9 @@
+name = "Taskfile"
+grammar = "yaml"
+path_suffixes = [
+  "Taskfile.yml",
+  "Taskfile.yaml",
+  "taskfile.yml",
+  "taskfile.yaml",
+]
+line_comments = ["# "]
