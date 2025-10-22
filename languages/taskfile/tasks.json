@@ -1,6 +1,6 @@
 [
   {
-    "label": "task: run task",
+    "label": "$ZED_SYMBOL",
     "command": "task --taskfile $ZED_FILENAME $ZED_SYMBOL",
     "cwd": "$ZED_DIRNAME",
     "tags": ["taskfile-task"]
