@@ -2,6 +2,8 @@
 
 Adds [Taskfile](https://taskfile.dev/) support to [Zed](https://zed.dev/).
 
+Available on the [Zed extensions registry](https://zed.dev/extensions/taskfile).
+
 ## Features
 
 - Syntax highlighting for Taskfile.yml and Taskfile.yaml files
